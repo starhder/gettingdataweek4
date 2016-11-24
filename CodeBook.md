@@ -1,7 +1,6 @@
 # Code Book: run_analysis.R explanation
 
 ## Function List
-Please check the code for parameter details.
  - endtoend(): runs the script to generate the requested dataframe and write to a file.
    To turn on the download, set download = TRUE. Setting download = FALSE because it 
    requires network connection and takes a while.
@@ -14,7 +13,16 @@ Please check the code for parameter details.
    * replaces activities with names
  - cleanfeaturenames(): is a helper function, gets all the mean and sd feature names.
  - activitynames(): is a helper function, gets all the activity names().
- 
+
+## Varaibles/Parameters
+Please also check the code for parameter details. If the function is not listed, there's no
+parameter for that function
+### endtoend
+ - out_file: which file will the data table write to.
+ - download: if TRUE, download the data file from internet first.
+### readjoinandclean
+ - dataset: either "train" or "test", it's the corresponding dataset to read.
+
 ## Howto
 ### Generate the result data
  - endtoend(download = TRUE) will generate the result from scratch (you need network connection).
