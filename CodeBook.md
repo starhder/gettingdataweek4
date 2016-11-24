@@ -17,13 +17,16 @@
 ## Varaibles/Parameters
 Please also check the code for parameter details. If the function is not listed, there's no
 parameter for that function
+
 ### endtoend
  - out_file: which file will the data table write to.
  - download: if TRUE, download the data file from internet first.
+
 ### readjoinandclean
  - dataset: either "train" or "test", it's the corresponding dataset to read.
 
 ## Howto
+
 ### Generate the result data
  - endtoend(download = TRUE) will generate the result from scratch (you need network connection).
    By default the "result.txt", alter out_file paramter to change output filename.
